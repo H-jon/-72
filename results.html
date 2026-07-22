@@ -9,58 +9,19 @@
 <body data-page="results">
   <div class="page-shell">
     <header class="site-header"><div class="container header-inner"><a class="logo" href="index.html">MOOD<span>IE</span></a><nav class="nav"><a href="index.html">홈</a><a href="mood.html">영화 추천</a><a class="active" href="results.html">영화 탐색</a><a href="favorites.html">찜 목록</a></nav><div class="header-actions"><a class="icon-btn" href="favorites.html">♡</a><span class="favorite-count" data-favorite-count>0</span></div></div></header>
-
     <main class="section">
       <div class="container">
         <div class="featured-preview" data-featured-preview></div>
-
-        <div class="result-header">
-          <div>
-            <div class="step-label">PERSONAL PICKS</div>
-            <h1 class="section-title" data-result-title>당신을 위한 추천 영화</h1>
-            <p class="section-subtitle">포스터 중앙의 재생 버튼 또는 미리보기를 눌러 큰 화면에서 줄거리와 추천 이유를 확인하세요.</p>
-          </div>
-          <div class="result-actions">
-            <button class="btn btn-secondary" onclick="nextRecommendations()">다른 영화 추천</button>
-            <a class="btn btn-ghost" href="mood.html">조건 다시 선택</a>
-          </div>
-        </div>
-
+        <div class="result-header"><div><div class="step-label">PERSONAL PICKS</div><h1 class="section-title">당신을 위한 추천 영화</h1><p class="section-subtitle">포스터 중앙의 재생 버튼 또는 미리보기를 눌러 큰 화면에서 줄거리와 추천 이유를 확인하세요.</p></div><div class="result-actions"><button class="btn btn-secondary" onclick="nextRecommendations()">다른 영화 추천</button><a class="btn btn-ghost" href="mood.html">조건 다시 선택</a></div></div>
         <div class="movie-grid" data-results-grid></div>
         <div class="center-action"><button class="btn btn-secondary" data-more-recommendations onclick="showMoreRecommendations()">추천 영화 더 보기</button></div>
       </div>
-
-      <section class="section section-divider">
-        <div class="container">
-          <div class="explore-toolbar">
-            <div>
-              <div class="step-label">EXPLORE ALL</div>
-              <h2 class="section-title" data-explore-heading>160편의 영화 전체 보기</h2>
-              <p class="section-subtitle">액션·호러·로맨스·코미디·드라마·애니메이션·SF·미스터리를 장르별 20편씩 만나보세요.</p>
-            </div>
-            <div>
-              <div class="search-box"><span>⌕</span><input data-movie-search type="search" placeholder="영화 제목이나 장르 검색"></div>
-              <div class="browse-count"><span data-explore-count>160편</span>을 탐색 중</div>
-            </div>
-          </div>
-
-          <div class="catalog-summary" aria-label="영화 보유 현황">
-            <div><strong>160</strong><span>전체 영화</span></div>
-            <div><strong>8</strong><span>주요 장르</span></div>
-            <div><strong>20</strong><span>장르별 영화</span></div>
-            <div><strong>160</strong><span>로컬 포스터</span></div>
-          </div>
-
-          <div class="genre-row" data-genre-row aria-label="영화 장르 필터"></div>
-
-          <div class="movie-grid explore-grid" data-explore-grid></div>
-          <div class="center-action"><button class="btn btn-secondary" data-more-explore onclick="showMoreExplore()">다른 영화 더 보기</button></div>
-        </div>
-      </section>
+      <section class="section section-divider"><div class="container"><div class="explore-toolbar"><div><div class="step-label">EXPLORE ALL</div><h2 class="section-title">160편의 영화 전체 보기</h2><p class="section-subtitle">액션·호러·로맨스·코미디·드라마·애니메이션·SF·미스터리를 장르별 20편씩 만나보세요.</p></div><div><div class="search-box"><span>⌕</span><input data-movie-search type="search" placeholder="영화 제목이나 장르 검색"></div><div class="browse-count"><span data-explore-count>160편</span>을 탐색 중</div></div></div><div class="catalog-summary"><div><strong>160</strong><span>전체 영화</span></div><div><strong>8</strong><span>주요 장르</span></div><div><strong>20</strong><span>장르별 영화</span></div><div><strong>160</strong><span>로컬 포스터</span></div></div><div class="genre-row" data-genre-row></div><div class="movie-grid explore-grid" data-explore-grid></div><div class="center-action"><button class="btn btn-secondary" data-more-explore onclick="showMoreExplore()">다른 영화 더 보기</button></div></div></section>
     </main>
   </div>
-  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 MOODIE</span><span>160편의 영화 데이터 · 8개 장르 각 20편 · 모든 영화 로컬 포스터 포함</span></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 MOODIE</span><span>160편의 영화 데이터 · 8개 장르 각 20편</span></div></footer>
   <script src="assets/data-base.js?v=10"></script>
+  <script src="assets/data-catalog-a.js?v=10"></script>
   <script src="assets/app.js?v=10"></script>
 </body>
 </html>
